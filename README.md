@@ -27,3 +27,16 @@
 
 <p><strong>17. retry_delay:</strong> timedalta(minutes=5)</p>
 
+# Definidos em default_args
+
+- Alguns destes parâmetros não podem ser definidos diretamente na DAG, mas default_args
+
+- Parametros podem ser sobreescritos diretamente na task
+
+# Catchup e Backfill
+
+- Roda intervalos não executados se definido como verdadeiro
+- Da start_date até agora
+- Se definido como falso não acontece
+- Backfill permite executar intervalos anteriores (airflow backfill)
+
